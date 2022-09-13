@@ -1,0 +1,221 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: Lumos;
+  src: url(../fonts/Lumos.woff2);
+}
+@font-face {
+  font-family: MasonSans;
+  src: url(../fonts/MasonSansRegular_Regular.woff2);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+}
+html body {
+  background-color: #353643;
+}
+
+.filtro {
+  background-color: #242633;
+}
+
+.gryffindorBg {
+  color: rgb(204, 45, 33);
+}
+
+.slytherinBg {
+  color: rgb(24, 155, 31);
+}
+
+.hufflepuffBg {
+  color: rgb(206, 203, 35);
+}
+
+.ravenclawBg {
+  color: rgb(29, 80, 138);
+}
+
+nav {
+  display: grid;
+  justify-items: center;
+  font-family: Lumos;
+  background-color: #10141B;
+}
+nav #home {
+  font-size: 40px;
+  background-color: #10141B;
+  color: #ffe658;
+  border: none;
+  text-decoration: underline;
+  padding: 5px;
+}
+nav .casas {
+  display: flex;
+  width: 100vw;
+  font-family: MasonSans;
+  font-size: x-large;
+}
+nav .casas button {
+  border: 0px;
+  display: grid;
+  justify-items: center;
+  padding: 10px !important;
+  width: 25%;
+}
+nav .casas button:hover {
+  text-decoration: underline;
+}
+
+#carritoSection {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
+#carritoSection .textoCarrito {
+  color: #f0f0f0;
+  font-size: 40px;
+  font-family: MasonSans;
+  text-decoration: underline;
+}
+
+#carrito {
+  display: grid;
+}
+#carrito .total {
+  color: #f0f0f0;
+  font-size: x-large;
+  text-decoration: underline;
+}
+
+#productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) !important;
+  justify-items: center;
+}
+#productos .producto {
+  border: solid 1px black;
+  border-radius: 10px;
+  width: 18rem;
+  background-color: rgba(16, 20, 27, 0.4);
+  color: #f0f0f0;
+  border: 0px;
+  margin: 10px;
+  display: grid;
+  align-items: end;
+  justify-content: space-around;
+  align-content: space-between;
+  justify-items: center;
+}
+#productos .producto img {
+  max-width: 20vw;
+  filter: drop-shadow(5 5px 5px #8b96a8);
+}
+
+.swal-modal {
+  background-color: #353643;
+}
+.swal-modal .swal-title, .swal-modal .swal-text {
+  color: #f0f0f0;
+}
+.swal-modal .swal-button {
+  background-color: #6B63B5;
+  color: #f0f0f0;
+}
+.swal-modal .swal-button:hover {
+  background-color: #4d4783;
+}
+
+#mainCompra {
+  display: flex;
+}
+#mainCompra .col-6 {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  color: #f0f0f0;
+  font-size: larger;
+}
+#mainCompra .col-6 #comprar {
+  padding: 0;
+}
+#mainCompra .col-6 #comprar li {
+  text-decoration: none;
+  list-style: none;
+}
+#mainCompra .col-6 .formulario {
+  display: flex;
+  flex-direction: column;
+}
+#mainCompra .col-6 .formulario #formulario {
+  display: grid;
+}
+#mainCompra .col-6 input {
+  background-color: #242633;
+  color: #f0f0f0;
+  padding: 7px;
+  margin: 7px;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 5px;
+}
+#mainCompra .col-6 input[type=submit] {
+  background-color: #4d4783;
+}
+#mainCompra .carritoSection {
+  justify-items: start;
+}
+#mainCompra #resumen {
+  display: grid;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.productoCarrito {
+  border: solid 1px black;
+  border-radius: 10px;
+  width: 18rem;
+  background-color: rgba(16, 20, 27, 0.4);
+  color: #f0f0f0;
+  border: 0px;
+  margin: 10px;
+  display: grid;
+  align-items: end;
+  justify-content: space-around;
+  align-content: space-between;
+  justify-items: center;
+}
+.productoCarrito img {
+  max-width: 20vw;
+  filter: drop-shadow(5 5px 5px #8b96a8);
+}
+
+.btnFinales {
+  display: grid;
+}
+.btnFinales button {
+  padding: 5px 10;
+  background-color: #4d4783;
+  color: #f0f0f0;
+  border: solid 1px #10141B;
+  font-weight: bold;
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+  padding: 5px;
+  background-color: #10141B;
+  font-size: xx-small;
+  color: #8b96a8;
+  margin-top: 5px;
+}
+footer p {
+  margin: 0;
+}/*# sourceMappingURL=styles.css.map */

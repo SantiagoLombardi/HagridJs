@@ -1,0 +1,224 @@
+$Color1Gryffindor: rgb(204, 45, 33);
+$Color1Slytherin: rgb(24, 155, 31);
+$Color1Hufflepuff: rgb(206, 203, 35);
+$Color1Ravenclaw: rgb(29, 80, 138);
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: Lumos;
+    src: url(../fonts/Lumos.woff2);
+}
+@font-face {
+    font-family: MasonSans;
+    src: url(../fonts/MasonSansRegular_Regular.woff2);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100vh;
+    body{
+        background-color: #353643;
+    }
+    
+}
+
+.filtro{
+    background-color: #242633;
+}
+.gryffindorBg{
+    color: $Color1Gryffindor;
+}
+.slytherinBg{
+    color: $Color1Slytherin;
+}
+.hufflepuffBg{
+    color: $Color1Hufflepuff;
+}
+.ravenclawBg{
+    color: $Color1Ravenclaw;
+}
+
+nav{
+    display: grid;
+    justify-items: center;
+    font-family: Lumos;
+    background-color: #10141B;
+    #home{
+        font-size: 40px;
+        background-color: #10141B;
+        color: #ffe658;
+        border: none;
+        text-decoration: underline;
+        padding: 5px;
+    }
+    .casas{
+        display: flex;
+        width: 100vw;
+        font-family: MasonSans;
+        font-size: x-large;
+        button{
+            border: 0px;
+            display: grid;
+            justify-items: center;
+            padding: 10px !important;
+            width: 25%;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#carritoSection{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    .textoCarrito{
+        color: #f0f0f0;
+        font-size: 40px;
+        font-family: MasonSans;
+        text-decoration: underline;
+    }
+}
+
+#carrito{
+    display: grid;
+    .total{
+        color: #f0f0f0;
+        font-size: x-large;
+        text-decoration: underline;
+    }
+}
+
+#productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    justify-items: center;
+    .producto{
+        border: solid 1px black;
+        border-radius: 10px;
+        width: 18rem;
+        background-color: #10141B66;
+        color: #f0f0f0;
+        border: 0px;
+        margin: 10px;
+        display: grid;
+        align-items: end;
+        justify-content: space-around;
+        align-content: space-between;
+        justify-items: center;
+        img{
+            max-width: 20vw;
+            filter: drop-shadow( 5 5px 5px #8b96a8);
+        }
+    }
+}
+
+.swal-modal{
+    background-color: #353643;
+    .swal-title, .swal-text{
+        color: #f0f0f0;
+    }
+    .swal-button{
+        background-color: #6B63B5;
+        color: #f0f0f0;
+        &:hover{
+            background-color: #4d4783;
+        }
+    }
+}
+
+#mainCompra{
+    display: flex;
+    .col-6{
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        color: #f0f0f0;
+        font-size: larger;
+        #comprar{
+            padding: 0;
+            li{
+                text-decoration: none;
+                list-style: none;
+            }
+        }
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            #formulario{
+                display: grid;
+            }
+        }
+        input{
+            background-color: #242633;
+            color: #f0f0f0;
+            padding: 7px;
+            margin: 7px;
+            font-size: 20px;
+            border: 0px;
+            border-radius: 5px;
+        }
+        input[type=submit]{
+            background-color: #4d4783;
+        }
+    }
+    .carritoSection{
+        justify-items: start;
+    }
+    #resumen{
+        display: grid;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.productoCarrito{
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 18rem;
+    background-color: #10141B66;
+    color: #f0f0f0;
+    border: 0px;
+    margin: 10px;
+    display: grid;
+    align-items: end;
+    justify-content: space-around;
+    align-content: space-between;
+    justify-items: center;
+    img{
+        max-width: 20vw;
+        filter: drop-shadow( 5 5px 5px #8b96a8);
+    }
+}
+
+.btnFinales{
+    display: grid;
+    button{
+        padding: 5px 10;
+        background-color: #4d4783;
+        color: #f0f0f0;
+        border: solid 1px #10141B;
+        font-weight: bold;
+    }
+}
+
+footer{
+    display: grid;
+    justify-content: center;
+    padding: 5px;
+    background-color: #10141B;
+    font-size: xx-small;
+    color: #8b96a8;
+    margin-top: 5px;
+    p{
+        margin: 0;
+    }
+}
